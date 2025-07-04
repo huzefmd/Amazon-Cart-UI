@@ -28,12 +28,29 @@ export const useCartItemStore = create((set, get) => ({
       cartItems: [...state.cartItems, item],
     })),
 
-  updateQuantity: (id, quantity) =>
-    set((state) => ({
-      cartItems: state.cartItems.map((item) =>
-        item.id === id ? { ...item, quantity } : item
-      ),
-    })),
+  // updateQuantity: (id, quantity) =>
+  //   set((state) => ({
+  //     cartItems: state.cartItems.map((item) =>
+  //       item.id === id ? { ...item, quantity } : item
+  //     ),
+  //   })),
+
+  updateQuantity: (id, quantity, itemData) =>
+    set((state) => {
+      const exists = state.cartItems.find((i) => i.id === id);
+
+      if (exists) {
+        return {
+          cartItems: state.cartItems.map((item) =>
+            item.id === id ? { ...item, quantity } : item
+          ),
+        };
+      } else {
+        return {
+          cartItems: [...state.cartItems, { ...itemData, quantity }],
+        };
+      }
+    }),
 
   removeItem: (id) =>
     set((state) => ({
