@@ -14,7 +14,7 @@ function AmazonStyleCart() {
           <h3>{item.quantity}</h3>
           <button onClick={() => { update(item.id, item.quantity + 1) }}>+</button>
           <button onClick={()=>{
-            if (item.quantity > 1) {
+            if (item.quantity > 0) {
               update(item.id ,item.quantity-1)
             }
           }}>-</button>

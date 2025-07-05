@@ -4,11 +4,11 @@ export const usewishItemStore = create((set) => ({
   products: [
     {
       id: 1,
-      name: "Redragon K617 Fizz 60% Wired RGB Gaming Keyboard, 61 Keys Compact Mechanical Keyboard w/White and Grey Color Keycaps, Linear Red Switch, Pro Driver/Software Supported",
+      name: "Redragon K617 60% Mechanical Keyboard ",
       price: 2290.0,
       image: "https://m.media-amazon.com/images/I/41EckzKo9lL._SS220_.jpg",
       rating: 4.5,
-      quantity: 1,
+      quantity: 0,
       reviews: 5261,
       oldPrice: 2790.0,
     },
@@ -20,7 +20,7 @@ export const usewishItemStore = create((set) => ({
       rating: 4,
       reviews: 1000,
       oldPrice: 350.0,
-      quantity: 1,
+      quantity: 0,
     },
     {
       id: 3,
@@ -30,7 +30,7 @@ export const usewishItemStore = create((set) => ({
       rating: 4.2,
       reviews: 2500,
       oldPrice: 12000.0,
-      quantity: 1,
+      quantity: 0,
     },
     {
       id: 4,
@@ -40,7 +40,7 @@ export const usewishItemStore = create((set) => ({
       rating: 4.3,
       reviews: 800,
       oldPrice: 1800.0,
-      quantity: 1,
+      quantity: 0,
     },
     {
       id: 5,
@@ -50,7 +50,7 @@ export const usewishItemStore = create((set) => ({
       rating: 4.6,
       reviews: 1200,
       oldPrice: 2200.0,
-      quantity: 1,
+      quantity: 0,
     },
     {
       id: 6,
@@ -60,7 +60,7 @@ export const usewishItemStore = create((set) => ({
       rating: 4.6,
       reviews: 1822,
       oldPrice: 898.0,
-      quantity: 1,
+      quantity: 0,
     },
     {
       id: 7,
@@ -70,7 +70,7 @@ export const usewishItemStore = create((set) => ({
       rating: 4.4,
       reviews: 1200,
       oldPrice: 385.0,
-      quantity: 1,
+      quantity: 0,
     },
     {
       id: 8,
@@ -80,7 +80,7 @@ export const usewishItemStore = create((set) => ({
       rating: 4.1,
       reviews: 1200,
       oldPrice: 421.0,
-      quantity: 1,
+      quantity: 0,
     },
   ],
 }));

@@ -22,16 +22,16 @@ function WishList() {
               <img
                 src={item.image}
                 alt={item.name}
-                className="w-full h-40 object-contain mb-2"
+                className="w-full h-40 object-contain mb-5"
               />
-              <h3 className="text-sm font-semibold">{item.name}</h3>
-              <h3 className="text-lg font-bold text-green-600">
+              <h3 className="text-sm font-semibold mb-5">{item.name}</h3>
+              <h3 className="text-lg font-bold text-green-600 mb-3">
                 ₹{item.price}
               </h3>
 
               <button
                 onClick={() => update(item.id, item.quantity + 1, item)}
-                className="border p-3 mt-2 w-full bg-yellow-400 hover:bg-yellow-500 rounded"
+                className="border p-3  w-full bg-yellow-400 hover:bg-yellow-500 rounded"
               >
                 Add to Cart
               </button>
